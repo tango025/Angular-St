@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "counterApp">
   <head>
     <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app_f04.js"></script>
     <title></title>
   </head>
-  <body>
-
+  <body ng-controller = "counterController">
+    <button ng-click = "noOfWatchers()">watchers</button>
+    <button ng-click = "countOnce()">up once counter(once)</button>
+    <button ng-click = "inCounter()">increase counter</button>
   </body>
 </html>
