@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Dependency Injection</title>
     <script src="angular.min.js"></script>
-    <script src="app.js"></script>
+    <script src="appf_03.js"></script>
   </head>
   <body ng-controller = "DIController">
     <div>
@@ -13,6 +13,13 @@
              ng-blur = "upper();">
 
     </div>
+    {{msg()}}<br>
+    {{congomsg()}}<br>
+    {{congomsg() | truth : 'congo' : 'fifa' }}
+    <br>
+    {{congomsg() | truth : 'likes' : 'loves'
+                 | truth : 'congo' : 'fifa'
+                 | uppercase }}
 
   </body>
 </html>
