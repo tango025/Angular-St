@@ -15,15 +15,17 @@ function counterController($scope){
   };
   $scope.inCounter = function(){
     $scope.counter++;
-  }
-  $scope.$watch('onceCounter',function(newValue,oldValue){
-    console.log("oldValue",oldValue);
-    console.log("newValue",newValue);
-  });
-  $scope.$watch('counter',function(newValue,oldValue){
-    console.log("Counter oldValue",oldValue);
-    console.log("Counter newValue",newValue);
-  });
+  };
+  
+  // $scope.$watch('onceCounter',function(newValue,oldValue){
+  //   console.log("oldValue",oldValue);
+  //   console.log("newValue",newValue);
+  // });
+  // $scope.$watch('counter',function(newValue,oldValue){
+  //   console.log("Counter oldValue",oldValue);
+  //   console.log("Counter newValue",newValue);
+  // });
+
 
   }
 })();
