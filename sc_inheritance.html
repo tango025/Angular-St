@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = "controllerAsApp">
+  <head>
+    <meta charset="utf-8">
+    <title>filter</title>
+    <script src="angular.min.js"></script>
+    <script src="sc_inheritance.js"></script>
+  </head>
+  <body>
+    <h1>controller as syntax</h1>
+    <div ng-controller = "parentController1">
+      <div ng-controller = "childController1">
+      </div>
+    </div>
+    <div ng-controller = "parentController2 as parent">
+      Parent value: {{ parent.value}}
+      <div ng-controller = "childController2 as child">
+        Child Value : {{child.value}}
+        Parent value: {{ parent.value}}
+      </div>
+
+    </div>
+
+  </body>
+</html>
